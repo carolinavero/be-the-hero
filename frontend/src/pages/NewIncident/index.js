@@ -4,7 +4,7 @@ import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../services/api'
 
-import './styles.css';
+import { NewIncidentContainer } from './styles.js';
 import logoImg from '../../assets/logo.svg';
 
 export default function NewIncident () {
@@ -38,7 +38,7 @@ export default function NewIncident () {
     }
 
     return (
-        <div className="new-incident-container">
+        <NewIncidentContainer>
             <div className="content">
                 <section>
                     <img src={logoImg} alt="Logo" />
@@ -71,6 +71,6 @@ export default function NewIncident () {
                     <button className="button" type="submit">Cadastrar</button>
                 </form>
             </div>
-        </div>
+        </NewIncidentContainer>
     );
 }

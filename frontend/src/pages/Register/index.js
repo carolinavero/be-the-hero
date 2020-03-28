@@ -4,7 +4,7 @@ import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../services/api';
 
-import './styles.css';
+import { RegisterContainer } from './styles.js';
 import logoImg from '../../assets/logo.svg';
 
 export default function Register() {
@@ -39,7 +39,7 @@ export default function Register() {
     }
 
     return (
-        <div className="register-container">
+        <RegisterContainer>
             <div className="content">
                 <section>
                     <img src={logoImg} alt="Logo"/>
@@ -86,6 +86,6 @@ export default function Register() {
                     <button className="button" type="submit">Cadastrar</button>
                 </form>
             </div>
-        </div>
+        </RegisterContainer>
     )
 }
