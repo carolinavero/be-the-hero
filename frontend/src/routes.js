@@ -6,6 +6,8 @@ import Register from './pages/Register';
 import Profile from './pages/Profile';
 import NewIncident from './pages/NewIncident';
 
+import GlobalStyle from './GlobalStyles';
+
 export default function Routes() {
     return(
         <BrowserRouter>
@@ -15,6 +17,8 @@ export default function Routes() {
                 <Route path="/profile" component={Profile} />
                 <Route path="/incidents/new" component={NewIncident} />
             </Switch>
+
+            <GlobalStyle />
         </BrowserRouter>
     )
 }

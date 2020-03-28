@@ -10,6 +10,12 @@ export const LogoContainer = styled.div `
     align-items: center;
     justify-content: space-between;
 
+    @media(max-width: 600px) {
+        max-width: 100%;
+        padding: 15px;
+        
+    }
+
     .form {
         width: 100%;
         max-width: 350px;
@@ -24,4 +30,13 @@ export const LogoContainer = styled.div `
         }
     }
 
+`;
+
+export const Col6 = styled.div `
+
+    @media(max-width: 600px) {
+        width: 100%;
+        margin-bottom: 2rem;
+
+    }
 `;
